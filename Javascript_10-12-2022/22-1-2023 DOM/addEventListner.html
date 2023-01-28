@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listner</title>
+  </head>
+  <body>
+    <h1>Hello There, I am Coding !!</h1>
+    <button id="action">Click ME!!</button>
+
+    <script>
+      // on click
+      let name = document.getElementById("action");
+      name.addEventListener("click", fn);
+
+      function fn() {
+        document.getElementById("action").innerText = "you Clicked Me.";
+        document.getElementById("action").style.backgroundColor = "green";
+        document.getElementById("action").style.color = "white";
+      }
+
+      // Need to Work On
+      /* 
+      Click
+      dblclick
+      mouseenter
+      mouseleave
+      mousehover
+      input
+      keydown
+      keyup
+      keypress
+      onload
+       */
+    </script>
+  </body>
+</html>

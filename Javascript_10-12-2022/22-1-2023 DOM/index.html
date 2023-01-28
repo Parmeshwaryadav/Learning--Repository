@@ -14,19 +14,37 @@
           <li>Projects</li>
         </ul>
       </nav>
+
+      <button onclick="maths()" id="clickme">Click ME !!!</button>
+      <h1 id="message"></h1>
     </header>
 
     <script>
       // create Element in html in js
-      let list = document.createElement("li");
-      list.style.color = "white";
-      list.style.backgroundColor = "red";
-      list.textContent = "best in Class DOM from JS";
-      document.body.appendChild(list);
+      //   let list = document.createElement("li");
+      //   list.style.color = "white";
+      //   list.style.backgroundColor = "red";
+      //   list.textContent = "best in Class DOM from JS";
+      //   document.body.appendChild(list);
 
       //   remove element in html using JS
-      const list = document.getElementById("ullist");
-      list.removeChild(list.firstElementChild);
+      //   const list = document.getElementById("ullist");
+      //   list.removeChild(list.firstElementChild);
+
+      // function on a button
+      function maths() {
+        let input = prompt(`Please Solve This to Move Ahead " 10-2 " `);
+        if (input == 8) {
+          let msg = document.getElementById("message");
+          msg.innerText = "you are Correct";
+          msg.style.backgroundColor = "green";
+          msg.style.color = "white";
+        } else {
+          let msg = document.getElementById("message");
+          msg.innerText = "you are InCorrect";
+          msg.style.backgroundColor = "red";
+        }
+      }
     </script>
   </body>
 </html>
