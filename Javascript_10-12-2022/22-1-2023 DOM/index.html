@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM manipulation</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="ullist">
+          <li>Home</li>
+          <li>Projects</li>
+        </ul>
+      </nav>
+    </header>
+
+    <script>
+      // create Element in html in js
+      let list = document.createElement("li");
+      list.style.color = "white";
+      list.style.backgroundColor = "red";
+      list.textContent = "best in Class DOM from JS";
+      document.body.appendChild(list);
+
+      //   remove element in html using JS
+      const list = document.getElementById("ullist");
+      list.removeChild(list.firstElementChild);
+    </script>
+  </body>
+</html>
